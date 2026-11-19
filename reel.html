@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kenangan PCCC</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Inter:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reel.css">
+</head>
+<body>
+<canvas id="stage" width="1920" height="1080"></canvas>
+
+<div class="ui">
+  <a id="back" class="btn" href="index.html#letter">← Kembali ke surat</a>
+  <label class="btn tool">Upload photos<input type="file" id="file" accept="image/*" multiple></label>
+  <button id="music">♪ Musik</button>
+  <button id="play">Jeda</button>
+  <button id="restart">Ulangi</button>
+  <span class="sp tool">Speed <input type="range" id="speed" min="0.75" max="1.5" step="0.05" value="1"><b id="spv">1.00x</b></span>
+  <button class="tool" id="editBtn">Edit copy</button>
+  <button class="tool" id="clean">Clean mode</button>
+  <button class="tool" id="export">Export WebM</button>
+</div>
+<div id="drawer" class="ui"></div>
+<div id="hint" class="ui">Drag and drop photos anywhere. Press Esc to leave clean mode.</div>
+<div id="bgm" style="position:fixed;width:1px;height:1px;left:-9999px;top:0;overflow:hidden"></div>
+<script src="js/reel.js"></script>
+</body>
+</html>
